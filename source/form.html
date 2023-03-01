@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-32x32.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2">
 </head>
 
 <body class="page__body">
@@ -56,6 +56,7 @@
     </section>
 
     <section class="review">
+      <h2 class="visually-hidden">Форма заполнения отзыва</h2>
       <form class="review__form form" action="https://echo.htmlacademy.ru" method="post">
         <div class="container form__container container">
           <fieldset class="review__client-block client field">
@@ -91,7 +92,8 @@
               </li>
               <li class="contact__item contact__item--contact">
                 <label class="contact__label field__label" for="email">Электронная почта*:</label>
-                <input class="contact__input field__input" id="email" type="email" required placeholder="Введите e-mail">
+                <input class="contact__input field__input" id="email" type="email" required
+                  placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>
@@ -102,19 +104,19 @@
               <li class="impression__item">
                 <input class="impression__input field__input visually-hidden" type="radio" name="impression" id="good"
                   checked>
-                <label class="impression__label choice-block__label" value="good" for="good">Скорее
+                <label class="impression__label choice-block__label" for="good">Скорее
                   положительное</label>
               </li>
               <li class="impression__item">
                 <input class="impression__input field__input visually-hidden" type="radio" name="impression"
                   id="negative">
-                <label class="impression__label choice-block__label" value="negative" for="negative">Скорее
+                <label class="impression__label choice-block__label" for="negative">Скорее
                   отрицательное</label>
               </li>
               <li class="impression__item">
                 <input class="impression__input field__input visually-hidden" type="radio" name="impression"
                   id="difficult">
-                <label class="impression__label choice-block__label" value="difficult" for="difficult">Затрудняюсь
+                <label class="impression__label choice-block__label" for="difficult">Затрудняюсь
                   ответить</label>
               </li>
             </ul>

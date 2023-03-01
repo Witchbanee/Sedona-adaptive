@@ -1300,3 +1300,6 @@ img {
 
 .map {
   margin-bottom: 39px; }
+
+.map iframe {
+  border: none; }
