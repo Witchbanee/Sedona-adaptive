@@ -1,5 +1,6 @@
 .contact__item {
   position: relative;
+  color: $basic-grey;
 
   &--contact label {
     padding-left: 20px;
@@ -41,7 +42,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
-    color: $basic-white;
     flex-wrap: wrap;
   }
 }

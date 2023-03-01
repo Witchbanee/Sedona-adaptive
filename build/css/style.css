@@ -523,7 +523,10 @@ img {
 
 .hotel-search__button {
   margin-top: 34px;
-  padding: 14px 32px 17px 32px; }
+  padding: 14px 32px 17px 32px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 30px; }
   @media (min-width: 768px) {
     .hotel-search__button {
       padding: 14px 121px 17px 121px;
@@ -589,6 +592,18 @@ img {
   align-items: center;
   margin-bottom: 20px; }
 
+.field__textarea::-moz-placeholder {
+  padding-left: 21px;
+  padding-top: 13px;
+  font-size: 18px;
+  color: #000000; }
+
+.field__textarea::placeholder {
+  padding-left: 21px;
+  padding-top: 13px;
+  font-size: 18px;
+  color: #000000; }
+
 .field__input,
 .field__textarea {
   font-size: 18px;
@@ -602,14 +617,6 @@ img {
   resize: none;
   min-height: 160px;
   margin-bottom: 51px; }
-
-.field__textarea::-moz-placeholder {
-  padding-left: 21px;
-  padding-top: 13px; }
-
-.field__textarea::placeholder {
-  padding-left: 21px;
-  padding-top: 13px; }
 
 .field__input {
   padding: 18px 0 14px 22px; }
@@ -626,9 +633,10 @@ img {
   border: none; }
 
 .review__button {
-  padding: 14px 32px 17px 32px;
+  padding: 20px 31px 15px 32px;
   display: block;
-  text-align: center; }
+  text-align: center;
+  font-family: "PT Sans", "Arial", sans-serif; }
 
 @media (min-width: 768px) {
   .review__form {
@@ -859,7 +867,8 @@ img {
   font-weight: 700; }
 
 .contact__item {
-  position: relative; }
+  position: relative;
+  color: #333333; }
   .contact__item--contact label {
     padding-left: 20px;
     margin-bottom: 8px;
@@ -888,7 +897,6 @@ img {
     .contact__item {
       display: flex;
       align-items: center;
-      color: #ffffff;
       flex-wrap: wrap; } }
 
 @media (min-width: 1200px) {
@@ -1289,3 +1297,6 @@ img {
   @media (min-width: 768px) {
     .popup-succes__button {
       padding: 18px 140px 14px 139px; } }
+
+.map {
+  margin-bottom: 39px; }

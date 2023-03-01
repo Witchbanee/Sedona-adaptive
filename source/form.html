@@ -64,17 +64,18 @@
             <ul class="client__list field__list">
               <li class="client__item">
                 <label class="client__label field__label" for="name">Имя*:</label>
-                <input class="client__input field__input" id="name" type="text" placeholder="Петр">
+                <input class="client__input field__input" required id="name" type="text" placeholder="Петр">
               </li>
 
               <li class="client__item">
                 <label class="client__label field__label" for="surname">Фамилия*:</label>
-                <input class="client__input field__input" id="surname" type="text" placeholder="Иванов">
+                <input class="client__input field__input" required id="surname" type="text" placeholder="Иванов">
               </li>
 
               <li class="client__item">
                 <label class="client__label field__label" for="patronymic">Отчество:</label>
-                <input class="client__input field__input" id="patronymic" type="text" placeholder="Александрович">
+                <input class="client__input field__input" required id="patronymic" type="text"
+                  placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
@@ -85,12 +86,12 @@
 
             <ul class="contact__list field__list">
               <li class="contact__item contact__item--contact">
-                <label class="contact__label field__label" for="phone">Контактный телефон*:</label>
-                <input class="contact__input field__input" id="phone" placeholder="Введите телефон">
+                <label class="contact__label field__label" for="phone">Телефон*:</label>
+                <input class="contact__input field__input" id="phone" required placeholder="Введите телефон">
               </li>
               <li class="contact__item contact__item--contact">
                 <label class="contact__label field__label" for="email">Электронная почта*:</label>
-                <input class="contact__input field__input" id="email" placeholder="Введите e-mail">
+                <input class="contact__input field__input" id="email" type="email" required placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>
@@ -145,11 +146,11 @@
           <fieldset class="review__emotions field">
             <legend class="review__title review__title-emotions review__title--main form__title">Опишите свои эмоции:
             </legend>
-            <textarea class="field__textarea" name="emotions" id="emotions" rows="3"
+            <textarea class="field__textarea" name="emotions" id="emotions" rows="3" required
               placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
-          <a class="review__button button">Отправить отзыв</a>
+          <button class="review__button button" type="submit">Отправить отзыв</button>
           <p class="form__descriprtion">* — обязательные поля</p>
         </div>
       </form>

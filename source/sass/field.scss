@@ -1,3 +1,9 @@
+.field__textarea::placeholder {
+  padding-left: 21px;
+  padding-top: 13px;
+  font-size: 18px;
+  color: $basic-black;
+}
 
 .field__input,
 .field__textarea {
@@ -15,10 +21,6 @@
   margin-bottom: 51px;
 }
 
-.field__textarea::placeholder {
-  padding-left: 21px;
-  padding-top: 13px;
-}
 
 .field__input {
   padding: 18px 0 14px 22px;
