@@ -1,0 +1,40 @@
+
+.field__input,
+.field__textarea {
+  font-size: 18px;
+  font-weight: 700;
+  background: $background-grey;
+  border: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  width: 100%;
+}
+
+.field__textarea {
+  resize: none;
+  min-height: 160px;
+  margin-bottom: 51px;
+}
+
+.field__textarea::placeholder {
+  padding-left: 21px;
+  padding-top: 13px;
+}
+
+.field__input {
+  padding: 18px 0 14px 22px;
+}
+
+.field__label {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-right: 13px;
+}
+
+.field__list {
+  list-style-type: none;
+}
+
+
+.field {
+  border: none;
+}

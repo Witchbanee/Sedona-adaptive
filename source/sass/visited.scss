@@ -1,0 +1,45 @@
+.visited__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.visited__item {
+  position: relative;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    justify-self: center;
+  }
+}
+
+.visited__label {
+  display: flex;
+  align-items: center;
+  padding-left: 63px;
+}
+
+.visited__input + label::before {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-color: $background-grey;
+  left: 0;
+}
+
+.visited__input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 17px;
+  background-image: url("../img/tick.svg");
+  left: 12px;
+}
