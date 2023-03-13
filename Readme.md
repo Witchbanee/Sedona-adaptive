@@ -1,6 +1,5 @@
 # Личный проект «Sedona-adaptive» 
 
-* Студент: [Павел Даньшин](https://github.com/Witchbanee).
 * [Проект](https://witchbanee.github.io/sedona-adaptive/build/). 
 
 
