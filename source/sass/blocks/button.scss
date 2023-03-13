@@ -1,0 +1,22 @@
+.button {
+  background-color: $light-blue;
+  font-weight: 700;
+  color: $basic-white;
+  text-transform: uppercase;
+  font-size: 21px;
+  border: none;
+
+  &:hover {
+    background-color: $blue-grey;
+  }
+
+  &:active {
+    color: transparentize($basic-white, 0.3);
+    background-color: $dark-blue;
+  }
+
+  &:disabled {
+    color: $basic-white;
+    background-color: $background-white;
+  }
+}

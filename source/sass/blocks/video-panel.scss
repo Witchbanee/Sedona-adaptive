@@ -1,0 +1,137 @@
+.video-panel {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.video-panel__range-block {
+  background-color: rgba($color: $basic-black, $alpha: 0.6);
+  height: 45px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: unset;
+  }
+}
+
+.video-panel__range {
+  margin-left: 23px;
+  margin-right: 23px;
+  height: 3px;
+  background-color: rgba($color: $basic-white, $alpha: 0.6);
+  top: 50%;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 21%;
+    background-color: $basic-white;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+  }
+}
+
+.video-panel__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.video-panel__button {
+  border: none;
+  background-color: unset;
+
+  @media (min-width: $tablet-width) {
+    &:hover {
+      b: $dim-grey;
+    }
+  }
+}
+
+.video-panel__item:not(.video-panel__item--range) {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-color: unset;
+  }
+}
+
+.video-panel__item--replay {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+    padding-right: 42px;
+  }
+}
+
+.video-panel__item--range {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.video-panel__item--subs {
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    text-align: unset;
+    padding-left: 42px;
+  }
+}
+
+.video-panel__button--full {
+  padding-left: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 42px;
+  }
+}
+
+.video-panel__img {
+  fill: #5c6870;
+
+  @media (min-width: $tablet-width) {
+    fill: $basic-white;
+
+    &:hover {
+      fill-opacity: 0.6;
+    }
+
+    &:active {
+      fill-opacity: 0.3;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &:hover {
+      fill: $basic-grey;
+    }
+
+    &:active {
+      fill-opacity: 0.3;
+    }
+  }
+}
